@@ -59,7 +59,7 @@
                         <div class="col-md-8 col-xs-12 nav-wrap">
                             <ul class="nav navbar-nav">
                                 <li><a href="#owl-hero" class="page-scroll">Home</a></li>
-                                <li><a href="#services" class="page-scroll">Galeria</a></li>
+                                <li><a href="{{ url('/galery') }}" class="page-scroll">Galeria</a></li>
                                 <li><a href="#portfolio" class="page-scroll">Eventos</a></li>
                                 <li><a href="#team" class="page-scroll">Videos</a></li>
                                 <li><a href="#contact" class="page-scroll">Contato</a></li>
@@ -79,13 +79,13 @@
         ============================================= -->
         <footer>
             <div class="container">
-                <h1>Rise</h1>
+                <h1>ARCA</h1>
                 <div class="social">
                     <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
                     <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
                     <a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
                 </div>
-                <h6>&copy; {{$year}} Rise.Development By BootstrapDev</h6>
+                <h6>&copy; {{$year}} Arca WebSite.Development By Leiviton</h6>
             </div>
         </footer>
     </div>
@@ -101,8 +101,9 @@
     <script src="{{ URL::asset('theme/plugins/inview/jquery.inview.min.js') }}"></script>
     <script src="{{ URL::asset('theme/plugins/Lightbox/dist/js/lightbox.min.js') }}"></script>
     <script src="{{ URL::asset('theme/plugins/WOW/dist/wow.min.js') }}"></script>
-    <!-- GOOGLE MAP -->
+    
+        <!-- GOOGLE MAP -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-</body>
+    </body>
 
 </html>

@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome',compact('titulo', 'year'));
 });
 
+Route::get('/galery', function () {
+    $titulo = 'CCARCA';
+    $year = date('Y');
+    return view('index',compact('titulo', 'year'));
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

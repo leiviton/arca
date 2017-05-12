@@ -1,4 +1,6 @@
-        
+@extends('layouts.layout')
+
+@section('content')      
         <!-- Services
         ============================================= -->
         <section id="services">
@@ -335,5 +337,5 @@
         <div id="map"></div>
 
 
-        <!-- GOOGLE MAP -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+@endsection
