@@ -53,12 +53,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img src="{{ URL::asset('theme/img/logo/arca.png') }}" class="arca" height="80" alt="logo"></a>
+                        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ URL::asset('theme/img/logo/arca.png') }}" class="arca" height="80" alt="logo"></a>
                     </div>
                     <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                         <div class="col-md-8 col-xs-12 nav-wrap">
                             <ul class="nav navbar-nav">
-                                <li><a href="#owl-hero" class="page-scroll">Home</a></li>
+                                <li><a href="{{ url('/') }}" class="page-scroll">Home</a></li>
                                 <li><a href="{{ url('/galery') }}" class="page-scroll">Galeria</a></li>
                                 <li><a href="#portfolio" class="page-scroll">Eventos</a></li>
                                 <li><a href="#team" class="page-scroll">Videos</a></li>
@@ -67,8 +67,8 @@
                         </div>
                         <div class="social-media hidden-sm hidden-xs">
                             <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="https://www.facebook.com/ComunidadeCristaArca" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCgCH1O7cvOXea_xmcWwZFqA" target="_blank"><i class="fa fa-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -88,6 +88,9 @@
                 <h6>&copy; {{$year}} Arca WebSite.Development By Leiviton</h6>
             </div>
         </footer>
+    </div>
+    <div class="container-loading">
+        <img class="img-loading" src="~/Images/loader.gif" />
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
