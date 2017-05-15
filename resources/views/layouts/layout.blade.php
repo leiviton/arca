@@ -104,7 +104,7 @@
     <script src="{{ URL::asset('theme/plugins/WOW/dist/wow.min.js') }}"></script>
     
         <!-- GOOGLE MAP -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYDjbhFPGaDVW5PJrgZ76SHJ0pWCtYbN0"></script>
     </body>
 
 </html>
