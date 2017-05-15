@@ -85,11 +85,11 @@
             <div class="container">
                 <h1>ARCA</h1>
                 <div class="social">
-                    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                    <a href="#"><i class="fa fa-dribbble fa-2x"></i></a>
+                   <a href="https://www.facebook.com/ComunidadeCristaArca" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                   <a href="https://www.youtube.com/channel/UCgCH1O7cvOXea_xmcWwZFqA" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                            
                 </div>
-                <h6>&copy; {{$year}} Arca WebSite.Development By Leiviton</h6>
+                <h6>&copy; {{$year}} Arca WebSite. Development By Leiviton</h6>
             </div>
         </footer>
     </div>
