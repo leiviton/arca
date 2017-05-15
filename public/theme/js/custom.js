@@ -54,6 +54,32 @@ $(document).ready(function () {
     $(window).resize(function () {
         $('#owl-hero .item').css('height', slideHeight);
     });
+
+    /***************** Owl Carousel ******************/
+
+    $("#owl-herosm").owlCarousel({
+
+        navigation: true, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        transitionStyle: "fadeUp",
+        autoPlay: true,
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+
+    });
+
+
+    /***************** Full Width Slide ******************/
+
+    var slideHeight = $(window).height() * 0.5;
+    var slideWidth = $(window).width();
+
+    $('#owl-herosm .item').css('height', slideHeight);
+
+    $(window).resize(function () {
+        $('#owl-herosm .item').css('height', slideHeight);
+    });
     /***************** Owl Carousel Testimonials ******************/
 
     $("#owl-testi").owlCarousel({
