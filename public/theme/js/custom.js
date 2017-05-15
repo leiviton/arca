@@ -72,13 +72,17 @@ $(document).ready(function () {
 
     /***************** Full Width Slide ******************/
 
-    var slideHeight = $(window).height() * 0.5;
-    var slideWidth = $(window).width();
+    var slideHeightsm = $(window).height() * 0.5;
+    var slideWidthsm = $(window).width() + 10;
 
-    $('#owl-herosm .item').css('height', slideHeight);
+    $('#owl-herosm .item').css('height', slideHeightsm);
+
+    $('#owl-herosm .item').css('width', slideWidthsm);
 
     $(window).resize(function () {
-        $('#owl-herosm .item').css('height', slideHeight);
+        $('#owl-herosm .item').css('height', slideHeightsm);
+        
+        $('#owl-herosm .item').css('width', slideWidthsm);
     });
     /***************** Owl Carousel Testimonials ******************/
 
