@@ -59,7 +59,7 @@
                         <div class="col-md-8 col-xs-12 nav-wrap">
                             <ul class="nav navbar-nav">
                                 <li><a href="{{ url('/') }}" class="page-scroll">Home</a></li>
-                                <li><a href="{{ url('/galery') }}" class="page-scroll">Galeria</a></li>
+                                <!--li><a href="{{ url('/galery') }}" class="page-scroll">Galeria</a></li-->
                                 <li><a href="#portfolio" class="page-scroll">Eventos</a></li>
                                 <li><a href="#team" class="page-scroll">Videos</a></li>
                                 <li><a href="#contact" class="page-scroll">Contato</a></li>
