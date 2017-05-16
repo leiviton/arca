@@ -173,7 +173,7 @@ Preloader Style
   right: 0;
   bottom: 0;
   z-index: 999999;
-  background: #24242a;
+  background: rgba(51, 122, 183, 0.8);
 }
 .preloader i {
   color: #fff;
@@ -669,7 +669,7 @@ Google Map Style
 Footer Map Style
 ========================================================================== */
 footer {
-  background: #24242a;
+  background: rgba(51, 122, 183, 1);;
   padding: 60px 0;
   text-align: center;
 }
@@ -705,7 +705,7 @@ Media Queries Style
 @media (max-width: 992px) {
   /*-- Navigation --*/
   .navbar-default {
-    background: #24242a;
+    background: rgba(51, 122, 183, 1);
   }
   .navbar-default .navbar-header {
     width: 100%;

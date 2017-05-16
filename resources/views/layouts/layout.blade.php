@@ -53,7 +53,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ URL::asset('theme/img/logo/arca.png') }}" class="arca" height="80" alt="logo"></a>
+                        <a class="navbar-brand hidden-sm hidden-xs" href="{{ url('/') }}"><img src="{{ URL::asset('theme/img/logo/arca.png') }}" class="arca" height="80" alt="logo"></a>
+                        <a class="navbar-brand hidden-lg hidden-md" href="{{ url('/') }}"><img src="{{ URL::asset('theme/img/logo/arcasm2.png') }}" class="arca" height="80" alt="logo" style="margin-top:1px; margin-left:30px;"></a>
                     </div>
                     <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                         <div class="col-md-8 col-xs-12 nav-wrap">
