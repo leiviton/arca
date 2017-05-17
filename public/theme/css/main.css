@@ -163,6 +163,35 @@ Layout
   background: #fff;
 }
 
+/*audio*/
+/* HIDE DOWNLOAD AUDIO BUTTON */
+     
+.btn.span1{  
+  background: rgba(55,50, 190, 1);
+}     
+.well{
+  padding: 0;
+  background: rgba(55,50, 190, 1);
+  border: none;
+}     
+.play-home{
+      position: fixed;
+      top: 30px;
+      margin-left: 900px;
+      z-index: 99999;
+      
+}
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
     /* ==========================================================================
 Preloader Style
 ========================================================================== */

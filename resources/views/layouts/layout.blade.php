@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ config('app.locale') }}" ng-app="arca">
 
 <head>
 
@@ -27,17 +27,38 @@
     <link href="{{ URL::asset('theme/css/main.css') }}" rel="stylesheet">
     <!-- Icons Font -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="{{ URL::asset('theme/css/bootstrap-player.css') }}" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+        diretorio = "/theme/img/sound/";
+        musicas = ["1"];
+        musicaAtual = 0;
+        $(document).ready(function() {
+            carregaMusica();
+            $("#btnNext").click(function() {
+                musicaAtual++;
+                carregaMusica();
+            });                
+        });    
+
+        carregaMusica = function() {
+            $("#player-source").attr("src", diretorio+musicas[musicaAtual]+".mp3");
+            $("#player").load();                
+        }
+    </script>
 
 </head>
 
 <body>
     <div id="layout">
+        
         <!-- Preloader
         ============================================= -->
         <div class="preloader"><i class="fa fa-circle-o-notch fa-spin fa-2x"></i></div>
@@ -80,9 +101,16 @@
              <!-- Google Map
         ============================================= -->
         <div id="map"></div>
+        <div class="col-md-2 play-home">
+        <audio id="player" autoplay controls>
+            <source id="player-source" type="audio/mpeg"/>    
+        </audio>
+        <button id="btnNext" class="btn btn-sm btn-primary" style="background: rgba(55,50, 190, 1); border: none; margin-top: -95px; margin-left: 190px; color:#000;padding:6px;"><i class="fa fa-forward"></i></button>
+        </div>
         <!-- Footer
         ============================================= -->
         <footer>
+         
             <div class="container">
                 <h1>ARCA</h1>
                 <div class="social">
@@ -94,6 +122,7 @@
             </div>
         </footer>
     </div>
+    
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -107,6 +136,7 @@
     <script src="{{ URL::asset('theme/plugins/inview/jquery.inview.min.js') }}"></script>
     <script src="{{ URL::asset('theme/plugins/Lightbox/dist/js/lightbox.min.js') }}"></script>
     <script src="{{ URL::asset('theme/plugins/WOW/dist/wow.min.js') }}"></script>
+    <script src="{{ URL::asset('theme/js/bootstrap-player.js') }}"></script>
     
         <!-- GOOGLE MAP -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYDjbhFPGaDVW5PJrgZ76SHJ0pWCtYbN0"></script>
