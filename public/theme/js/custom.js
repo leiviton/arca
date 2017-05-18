@@ -31,59 +31,39 @@ $(document).ready(function () {
     })
 
     /***************** Owl Carousel ******************/
+    $("#bg-slider").owlCarousel({
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 100,
+      autoPlay: 100500,
+      paginationSpeed : 100,
+      singleItem:true,
+      mouseDrag: true,
+      transitionStyle : "fade"
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false 
+  });
 
-    $("#owl-hero").owlCarousel({
-
-        navigation: true, // Show next and prev buttons
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        singleItem: true,
-        transitionStyle: "fadeUp",
-        autoPlay: true,
-        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-
-    });
-
-
-    /***************** Full Width Slide ******************/
-
-    var slideHeight = $(window).height();
-
-    $('#owl-hero .item').css('height', slideHeight);
-
-    $(window).resize(function () {
-        $('#owl-hero .item').css('height', slideHeight);
-    });
-
-    /***************** Owl Carousel ******************/
-
-    $("#owl-herosm").owlCarousel({
-
-        navigation: true, // Show next and prev buttons
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        singleItem: true,
-        transitionStyle: "fadeUp",
-        autoPlay: true,
-        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-
-    });
-
-
-    /***************** Full Width Slide ******************/
-
-    var slideHeightsm = $(window).height() * 0.5;
-    var slideWidthsm = $(window).width() + 10;
-
-    $('#owl-herosm .item').css('height', slideHeightsm);
-
-    $('#owl-herosm .item').css('width', slideWidthsm);
-
-    $(window).resize(function () {
-        $('#owl-herosm .item').css('height', slideHeightsm);
-        
-        $('#owl-herosm .item').css('width', slideWidthsm);
-    });
+  $("#bg-slider-cel").owlCarousel({
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 100,
+      autoPlay: 6500,
+      paginationSpeed : 100,
+      singleItem:true,
+      mouseDrag: false,
+      transitionStyle : "fade"
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false 
+  });
     /***************** Owl Carousel Testimonials ******************/
 
     $("#owl-testi").owlCarousel({

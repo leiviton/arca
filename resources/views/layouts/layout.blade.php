@@ -101,7 +101,7 @@
              <!-- Google Map
         ============================================= -->
         <div id="map"></div>
-        <div class="col-md-2 play-home">
+        <div class="col-md-2 play-home hidden-sm hidden-xs">
         <audio id="player" controls>
             <source id="player-source" type="audio/mpeg"/>    
         </audio>
