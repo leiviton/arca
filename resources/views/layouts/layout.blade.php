@@ -52,6 +52,18 @@
             $("#player-source").attr("src", diretorio+musicas[musicaAtual]+".mp3");
             $("#player").load();                
         }
+        $(document).ready(function() {
+            carregaMusica1();
+            $("#btnNext1").click(function() {
+                musicaAtual++;
+                carregaMusica();
+            });                
+        });    
+
+        carregaMusica1 = function() {
+            $("#player-source1").attr("src", diretorio+musicas[musicaAtual]+".mp3");
+            $("#player1").load();                
+        }
     </script>
 
 </head>
@@ -110,7 +122,12 @@
         <!-- Footer
         ============================================= -->
         <footer>
-         
+            <div class="col-sm-12 play-home-sm hidden-md hidden-lg">
+                <audio id="player1" controls>
+                    <source id="player-source1" type="audio/mpeg"/>    
+                </audio>
+                <button id="btnNext1" class="btn btn-sm btn-primary" style="background: rgba(55,50, 190, 1); border: none; margin-top: -95px; margin-left: 190px; color:#000;padding:6px;"><i class="fa fa-forward"></i></button>
+            </div>
             <div class="container">
                 <h1>ARCA</h1>
                 <div class="social">

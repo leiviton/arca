@@ -51,7 +51,7 @@ $(document).ready(function () {
   $("#bg-slider-cel").owlCarousel({
       navigation : false, // Show next and prev buttons
       slideSpeed : 100,
-      autoPlay: 6500,
+      autoPlay: 10000,
       paginationSpeed : 100,
       singleItem:true,
       mouseDrag: false,
@@ -69,7 +69,7 @@ $(document).ready(function () {
     $("#owl-testi").owlCarousel({
 
         navigation: false, // Show next and prev buttons
-        paginationSpeed: 400,
+        paginationSpeed: 1000,
         singleItem: true,
         transitionStyle: "backSlide",
         autoPlay: true

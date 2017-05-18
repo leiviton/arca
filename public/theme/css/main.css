@@ -168,6 +168,11 @@ Layout
     position: relative;
     margin-top: 84px !important;
   }
+  .play-home{ 
+      top: 100% !important;
+      z-index: 99999;
+      
+  }
 }
 
 .carousel {
@@ -194,6 +199,11 @@ Layout
 .play-home{
       position: fixed;
       top: 30px;
+      margin-left: 900px;
+      z-index: 99999;
+      
+}
+.play-home{
       margin-left: 900px;
       z-index: 99999;
       
