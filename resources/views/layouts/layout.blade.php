@@ -102,7 +102,7 @@
         ============================================= -->
         <div id="map"></div>
         <div class="col-md-2 play-home">
-        <audio id="player" autoplay controls>
+        <audio id="player" controls>
             <source id="player-source" type="audio/mpeg"/>    
         </audio>
         <button id="btnNext" class="btn btn-sm btn-primary" style="background: rgba(55,50, 190, 1); border: none; margin-top: -95px; margin-left: 190px; color:#000;padding:6px;"><i class="fa fa-forward"></i></button>
