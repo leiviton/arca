@@ -38,7 +38,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script type="text/javascript">
         diretorio = "/theme/img/sound/";
-        musicas = ["1","2"];
+        musicas = ["2"];
         musicaAtual = 0;
         $(document).ready(function() {
             carregaMusica();
