@@ -9,9 +9,9 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Comunidade Cristã Arca - Seu lugar de encontro com Deus">
+    <meta name="keywords" content="Arca, Guaxupé, Jesus, Evangelicos, Jovem, Cristão">
+    <meta name="author" content="Leiviton Sistemas - leivitonpj@gmail.com">
 
     <link rel="shortcut icon" href="{{ URL::asset('theme/img/logo/arca2.png') }}">
     <!-- Bootstrap Css -->
