@@ -15,6 +15,12 @@
             <div class="item">
                 <img src="{{ URL::asset('theme/img/sliders/5.png') }}" alt="Flower">
             </div>
+            <div class="item">
+                <img src="{{ URL::asset('theme/img/sliders/6.png') }}" alt="Flower">
+            </div>
+            <div class="item">
+                <img src="{{ URL::asset('theme/img/sliders/2.png') }}" alt="Flower">
+            </div>
         </div>
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -29,6 +35,8 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
     </div>
 </div>
