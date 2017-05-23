@@ -92,12 +92,11 @@
                     <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
                         <div class="col-md-8 col-xs-12 nav-wrap">
                             <ul class="nav navbar-nav">
-                                <li><a href="{{ url('/') }}" class="page-scroll">Home</a></li>
-                                <!--li><a href="{{ url('/galery') }}" class="page-scroll">Galeria</a></li-->
-                                <li><a href="#" class="page-scroll">Galeria</a></li>
-                                <li><a href="#" class="page-scroll">Eventos</a></li>
-                                <li><a href="#" class="page-scroll">Videos</a></li>
-                                <li><a href="#" class="page-scroll">Contato</a></li>
+                                <li><a href="{{ url('/') }}">Home</a></li>
+                                <li><a href="{{ url('/galery') }}">Galeria</a></li>
+                                <li><a href="#">Eventos</a></li>
+                                <li><a href="#">Videos</a></li>
+                                <li><a href="{{ url('/contact') }}">Contato</a></li>
                             </ul>
                         </div>
                         <div class="social-media hidden-sm hidden-xs">
@@ -110,7 +109,7 @@
                 </div>
             </nav>
             @yield('content')
-             <!-- Google Map
+             <!-- Google Map  digital CODEANYWHERE-ebb100dd
         ============================================= -->
         <div id="map"></div>
         <div class="col-md-2 play-home hidden-sm hidden-xs">

@@ -10,6 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/videos',['as'=>'videos.index','uses'=>'VideosController@index']);
+
+Route::get('/contact',['as'=>'contact.index','uses'=>'ContactController@index']);
+
+Route::post('contact', 'ContactController@postContato');
 
 Route::get('/', function () {
     $titulo = 'CCARCA';
@@ -17,11 +22,7 @@ Route::get('/', function () {
     return view('welcome',compact('titulo', 'year'));
 });
 
-Route::get('/galery', function () {
-    $titulo = 'CCARCA';
-    $year = date('Y');
-    return view('index',compact('titulo', 'year'));
-});
+Route::get('/galery', ['as'=>'galery.index','uses'=>'GaleryController@index']);
 
 Auth::routes();
 
